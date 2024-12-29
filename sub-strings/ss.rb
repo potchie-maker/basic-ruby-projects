@@ -1,5 +1,5 @@
 def substrings(word, dictionary)
-  lowered = word.split(' ').map { |string| string.downcase }
+  lowered = word.downcase.split(' ')
 
   list = dictionary.reduce(Hash.new(0)) do |hash, string|
     lowered.each do |w|
