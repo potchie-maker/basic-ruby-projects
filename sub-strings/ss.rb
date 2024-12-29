@@ -9,7 +9,7 @@ def substrings(word, dictionary)
     end
     hash
   end
-  p list
+  puts list
 end
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
