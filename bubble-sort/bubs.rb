@@ -78,17 +78,14 @@ def bubble_sort(arr)
         comp_num = curr_num
       end
     end
-  
-    if arr == arr.sort
-      arr.delete_at(-1)
-      p arr
-      return arr
-    end
-    
+
     arr = sorted.compact.push(comp_num)
     sorted = []
     comp_num = arr[0]
   end
+  arr.delete_at(-1)
+  p arr
+  arr
 end
 
 bubble_sort([4,3,78,2,0,2])
