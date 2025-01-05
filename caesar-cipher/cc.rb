@@ -16,9 +16,8 @@
 #   puts "--------------------------------"
 #   puts "Caesar Cipher: #{cipher.join}"
 # end
-# 
-#
-#
+
+# rubocop: disable Metrics/AbcSize
 def caesar_cipher(string, shift)
   upp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   low = "abcdefghijklmnopqrstuvwxyz"
@@ -37,10 +36,11 @@ def caesar_cipher(string, shift)
       letter
     end
   end
-  
+
   puts "Original: #{string}"
   puts "--------------------------------"
   puts "Caesar Cipher: #{cipher.join}"
 end
+# rubocop: enable Metrics/AbcSize
 
 caesar_cipher("What a string!", 5)
